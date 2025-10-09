@@ -58,7 +58,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
             AnimatedDefaultTextStyle(
               duration: const Duration(milliseconds: 150),
               curve: Curves.easeInOut,
-              style: AppTextStyles.textB16.copyWith(
+              style: AppTextStyles.textL12.copyWith(
                 fontSize: isMobile ? 16 : 24,
               ),
               child: GestureDetector(
