@@ -15,7 +15,7 @@ jobs:
       uses: subosito/flutter-action@v2.12.0
       with:
         channel: 'stable'
-        flutter-version: '3.6.0'
+        flutter-version: '3.27.1'
 
     - name: Build Web
       run: flutter build web --release --base-href "/${{ github.event.repository.name }}/"
