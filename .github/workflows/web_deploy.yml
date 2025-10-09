@@ -3,6 +3,9 @@ name: Deploy to GitHub Pages
 env:
   CUSTOM_DOMAIN: jaehoon-portfolio.com
 
+permissions:
+  contents: write
+
 on:
   push:
     branches: [ main ]
