@@ -23,6 +23,9 @@ jobs:
     - name: Set custom domain
       run: echo "jaehoon-portfolio.com" > build/web/CNAME
 
+    - name: Disable Jekyll
+      run: touch build/web/.nojekyll
+
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3.9.3
       with:
