@@ -26,14 +26,11 @@ class AppRouter {
       null;
 
   late final GoRouter _router = GoRouter(
-    initialLocation: Routes.home.name,
+    initialLocation: Routes.home.path,
     debugLogDiagnostics: true,
     navigatorKey: rootNavigatorKey,
-    errorBuilder: (BuildContext context, GoRouterState state) => const Scaffold(
-      body: Center(
-        child: Text('Internal Error'),
-      ),
-    ),
+    errorBuilder: (BuildContext context, GoRouterState state) =>
+        const HomeView(),
     redirect: _redirect,
     routes: <RouteBase>[
       GoRoute(

@@ -2,8 +2,8 @@ import 'route_info.dart';
 
 class Routes {
   static const RouteInfo home = RouteInfo(
-    path: '/home',
-    name: '/home',
+    path: '/',
+    name: '/',
   );
 
   static const RouteInfo resume = RouteInfo(

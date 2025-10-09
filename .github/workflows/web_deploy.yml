@@ -26,6 +26,9 @@ jobs:
     - name: Build Web
       run: flutter build web --release --base-href /
 
+    - name: Copy 404.html
+      run: cp web/404.html build/web/404.html
+
     - name: Set custom domain
       run: echo "${{ env.CUSTOM_DOMAIN }}" > build/web/CNAME
 
