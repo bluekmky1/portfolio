@@ -7,6 +7,9 @@ class Assets {
 
   static const String luckitbg = 'assets/images/luckit_bg.png';
 
+  // profile
+  static const String profileImg = 'assets/images/profile.png';
+
   // icons
   static const String dribbleLogo = 'assets/icons/dribbble-logo.svg';
   static const String luckitLogo = 'assets/icons/luckit_logo.svg';

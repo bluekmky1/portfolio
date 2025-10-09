@@ -217,7 +217,11 @@ class _ResumeViewState extends ConsumerState<ResumeView> {
                                       color: AppColors.gray300,
                                     ),
                                   ),
-                                  child: Image.asset(Assets.appIcon2),
+                                  clipBehavior: Clip.antiAlias,
+                                  child: Image.asset(
+                                    Assets.profileImg,
+                                    fit: BoxFit.cover,
+                                  ),
                                 ),
                                 const SizedBox(height: 16),
                                 ...List<Widget>.generate(
