@@ -2,7 +2,6 @@ name: Deploy to GitHub Pages
 
 env:
   CUSTOM_DOMAIN: jaehoon-portfolio.com
-  GITHUB_REPO: https://github.com/bluekmky1/portfolio.git
 
 on:
   push:
@@ -22,15 +21,14 @@ jobs:
         flutter-version: '3.27.1'
 
     - name: Build Web
-      run: flutter build web --release
+      run: flutter build web --release --base-href /
 
     - name: Set custom domain
-      run: echo "jaehoon-portfolio.com" > build/web/CNAME
+      run: echo "${{ env.CUSTOM_DOMAIN }}" > build/web/CNAME
 
     - name: Deploy to GitHub Pages
-      run: cd build/web && git init && \
-           git add . && \
-           git commit -m "Deploy to GitHub Pages" && \
-           git branch -M gh-pages && \
-           git remote add origin ${{ env.GITHUB_REPO }} && \
-           git push -u --force origin gh-pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build/web
+        cname: ${{ env.CUSTOM_DOMAIN }}
