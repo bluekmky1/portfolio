@@ -1,0 +1,26 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ gh-pages ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4.1.1
+
+    - name: Setup Flutter
+      uses: subosito/flutter-action@v2.12.0
+      with:
+        flutter-version: '3.6.0'
+
+    - name: Build Web
+      run: flutter build web --release --base-href "/${{ github.event.repository.name }}/"
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3.9.3
+      with:
+        github_token: ${{ secrets.WEB_DEPLOY_SECRET_KEY }}
+        publish_dir: ./build/web
