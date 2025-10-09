@@ -66,7 +66,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                   context.goNamed(Routes.home.name);
                 },
                 child: const Text(
-                  'Ma Jae Hoon',
+                  'MaJaeHoon',
                 ),
               ),
             ),

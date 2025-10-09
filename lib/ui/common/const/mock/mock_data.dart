@@ -166,7 +166,6 @@ class MockData {
   static const List<ResumeTileModel> profileModels = <ResumeTileModel>[
     ResumeTileModel(title: '이름', value: '마재훈'),
     ResumeTileModel(title: '생년월일', value: '2000.05.23'),
-    ResumeTileModel(title: '연락처', value: '010-9639-3439'),
     ResumeTileModel(title: '이메일', value: 'bluekmky@gmail.com'),
     ResumeTileModel(title: '주소', value: '경기도 안양시 동안구 비산로 22'),
   ];
@@ -305,7 +304,7 @@ class MockData {
     ),
     GyeonExplainModel(
       title: '성과',
-      explain: '첫날 사이트 방문자 750명 / 홍보 게시물 좋아요 152, 댓글 39, 스크랩 284',
+      explain: '첫날 사이트 방문자 약 500명 / 홍보 게시물 좋아요 152, 댓글 39, 스크랩 284',
     ),
   ];
 
@@ -366,7 +365,7 @@ class MockData {
       explains: <String>[
         '홍보는 에브리타임 게시글을 통해 진행했습니다.',
         '2025.04월 기준 좋아요 152개, 댓글 39개, 스크랩 284회를 기록했습니다.',
-        '홍보글 업로드 첫날 사이트 방문자 수는 750명을 기록했습니다.',
+        '홍보글 업로드 첫날 사이트 방문자 수는 500명을 기록했습니다.',
       ],
     ),
     GyeonSectionExplainModel(

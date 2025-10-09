@@ -230,7 +230,7 @@ class FooterWidget extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             Text('Portpolio', style: AppTextStyles.textM12),
-            Text('Copyright © 2025 Jaehoon Ma', style: AppTextStyles.textM12),
+            Text('Copyright © 2025 MaJaeHoon', style: AppTextStyles.textM12),
           ],
         ),
       );
