@@ -117,7 +117,7 @@ class MockData {
     ResumeTileModel(
       title: '2023. 02\n',
       value: 'AI SW 창업 아이디어 캠프 대상',
-      subValue: '경기대학교 / 버스에서 내릴 때 깨워주는 앱 제안',
+      subValue: '경기대학교 / 버스에서 내릴 때 다른 사람을 깨워주고 리워드를 받는 앱 제안',
     ),
   ];
 
